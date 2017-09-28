@@ -1,0 +1,12 @@
+<resources>
+    <string name="api_name">TjAppx</string>
+    <string name="app_name">Asistencia Tj</string>
+    <string name="request_module_name">Solicitud de Aprobacion</string>
+    <string name="lbl_requested_by_text">Solicitante:</string>
+    <string name="lbl_waiting_for_approval_text">Su solicitud ha sido enviada. Esperando aprobacion.</string>
+    <string name="analisis_module_name">Asistencia</string>
+    <string name="lbl_combo_reuniones_text">Reunion:</string>
+    <string name="lbl_combo_congregaciones_text">Congregacion:</string>
+    <string name="lbl_combo_secciones_text">Seccion:</string>
+    <string name="lbl_numero_asistentes_text">Numero de asistentes:</string>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.tjappx.asistencia.AsistenciaActivity"
+    tools:layout_editor_absoluteY="73dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/txtAnalisisModuleName"
+        android:text="@string/analisis_module_name"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="85dp"
+        app:layout_constraintRight_toRightOf="@+id/txtCboCongregacionesText"
+        app:layout_constraintTop_toTopOf="@+id/imgAnalisisModule"
+        android:layout_marginRight="85dp" />
+
+    <ImageView
+        android:id="@+id/imgAnalisisModule"
+        app:srcCompat="@drawable/ic_calendar_today_24dp"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtCboCongregacionesText"
+        android:layout_marginStart="186dp"
+        android:layout_marginEnd="204dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtAnalisisModuleName"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="186dp"
+        android:layout_marginRight="204dp" />
+
+    <TextView
+        android:id="@+id/txtCboReunionesText"
+        android:text="@string/lbl_combo_reuniones_text"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/cboReuniones"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cboReuniones" />
+
+    <Spinner
+        android:id="@+id/cboReuniones"
+        android:spinnerMode="dropdown"
+        android:background="@color/colorPrimary"
+        android:popupBackground="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        app:layout_constraintRight_toLeftOf="@+id/cboCongregaciones"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/cboSecciones"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="15dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"></Spinner>
+
+    <TextView
+        android:id="@+id/txtCboCongregacionesText"
+        android:text="@string/lbl_combo_congregaciones_text"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/cboCongregaciones"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cboCongregaciones" />
+
+    <Spinner
+        android:id="@+id/cboCongregaciones"
+        android:spinnerMode="dropdown"
+        android:background="@color/colorPrimary"
+        android:popupBackground="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumeroAsistentes"
+        app:layout_constraintRight_toRightOf="@+id/txtNumeroAsistentes"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtNumeroAsistentes"></Spinner>
+
+    <TextView
+        android:id="@+id/txtCboSeccionesText"
+        android:text="@string/lbl_combo_secciones_text"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumeroAsistentes"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cboSecciones"
+        app:layout_constraintTop_toTopOf="@+id/txtNumeroAsistentesText" />
+
+    <Spinner
+        android:id="@+id/cboSecciones"
+        android:spinnerMode="dropdown"
+        android:background="@color/colorPrimary"
+        android:popupBackground="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNumeroAsistentes"
+        app:layout_constraintRight_toRightOf="@+id/cboReuniones"
+        app:layout_constraintTop_toBottomOf="@+id/txtCboSeccionesText"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cboReuniones"></Spinner>
+
+    <TextView
+        android:id="@+id/txtNumeroAsistentesText"
+        android:text="@string/lbl_numero_asistentes_text"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/pbAsistenciaModule"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtNumeroAsistentes" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/txtNumeroAsistentes"
+        android:textSize="18dp"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/pbAsistenciaModule"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="39dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroAsistentesText"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/pbAsistenciaModule"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="39dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnCapturarAsistencia"
+        app:srcCompat="@drawable/ic_send_24dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="capturarAsistencia"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/txtNumeroAsistentes"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroAsistentes"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintLeft_toRightOf="@+id/txtNumeroAsistentesText"
+        android:layout_marginLeft="6dp" />
+
+    <ProgressBar
+        android:id="@+id/pbAsistenciaModule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>
